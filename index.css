@@ -1,0 +1,215 @@
+
+.main-container{
+    height: auto;
+    width: 95%;
+    margin-left: 2%;
+}
+.main-heading{
+    font-size: 0.8rem;
+    letter-spacing: .18rem;
+    font-weight: 700;
+    color: red;
+    margin-top: 2%;
+}
+
+
+.inner-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 5px;
+    height: 95%;
+    padding-bottom: 1%;
+}
+
+/* text-container-details */
+.text-container{
+    width: 60%;
+    max-height: 45%;
+}
+.our-brand-heading{
+    margin: 0rem 0rem 0.6rem;
+    font-size: 58px;
+    color: rgb(69, 55, 55);
+    font-weight: normal;
+    
+}
+.content{
+    font-size:130%;
+    letter-spacing: 0;
+    line-height: 1.8rem;
+    color: rgb(116, 116, 113);
+   
+}  
+
+
+
+/* silde container details */
+.slide-container{
+    width:100%;
+    min-height: 45%;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+
+.splide__list{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    align-items: center;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+   
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* dont show this btn in small device */
+.btn-for-large{
+    display: none;
+}
+/*  */
+
+.btn-for-small{
+    width: 30%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 100%;
+    margin: auto;
+    transition:scale 1s ease;
+}
+.btn-for-small:focus{
+    scale: 1.01;
+}
+
+button {
+    width: 60%;
+    height: 20%;
+    color: white;
+    background-color: black;
+    border-radius: 38px;
+    scale: 1;
+    font-size: 130%;
+    
+}
+.navigation-btn{
+    position: absolute;
+    bottom: 10px;
+    left:17px;
+    color: red;
+    border-width: 0px;
+    font-weight:1000;
+    background-color: white;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    color: rgb(249, 110, 133);
+}
+.btn1{
+    color: green;
+}
+.btn2,.btn3{
+    color: black;
+}
+.btn4{
+    color: rgb(216, 138, 105);
+}
+.splide__arrow--prev{
+    display: none;
+}
+button.splide__arrow.splide__arrow--prev {
+    display: none;
+}
+button.splide__arrow.splide__arrow--next
+{
+    background-color: black;
+   
+}
+button.splide__arrow.splide__arrow--next::before
+{
+    content: ">";
+    color: white;
+    font-size: 100%;
+    font-weight:1200;
+    padding-left: 30%;
+    
+}
+
+
+
+/* large device media queries */
+@media screen and (max-width:537px){
+    .our-brand-heading{
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width:1100px){
+    .btn-for-small{
+        display: none;
+    }
+    .btn-for-large{
+        display: inline;
+        border:0px solid black;
+        transition:scale 0.5s ease;
+    }
+    .btn-for-large:hover{
+        scale: 1.01;
+        
+    }
+    .text-container{
+        width: 35%;
+        min-height:100%;
+    }
+    .content{
+        font-size:113%;
+        
+    }
+
+    .inner-container{
+        flex-direction: row;
+        gap: 5px;
+    }
+    .slide-container{
+        width: 63%;
+        min-height:100%;
+        
+    }
+    .card{
+        width: 95%;
+        height: 100%;
+       
+    }
+    .our-brand-heading{
+        font-size: 65px;
+    }
+    .splide__list{
+        gap: 8px;
+    }
+}
+@media screen and (min-width:1300px){
+    .content{
+        font-size:160%;
+       
+    }   
+    .our-brand-heading{
+        font-size: 80px;
+    }
+}
